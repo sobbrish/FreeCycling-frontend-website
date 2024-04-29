@@ -1,0 +1,115 @@
+.navbar{
+    background-color: #f0e5ec;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 1rem 1rem;
+    gap:5rem;
+}
+
+img {
+    display:inline-block;
+}
+
+.nav-items {
+    font-family:"Heebo",sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:8rem;
+    
+}
+
+.nav-items a{
+    text-decoration: none;
+}
+
+.nav-items a.active{
+    text-decoration: none;
+    color: #924E7D;
+}
+
+.nav-items a:hover{
+    
+    color: #924E7D;
+}
+
+.search{
+    position:relative;
+    display: inline-block;
+}
+
+.search input{
+    border-radius: 25px;
+    width:25rem;
+    height:3.5rem;
+    padding:0 4rem 0 1.5rem;
+    
+}
+
+.register{
+    text-decoration: none;
+    color:#924E7D;
+    font-size: 24px;
+    border:2px solid #924E7D;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem 0.5rem;
+    transition: 110ms ease-in-out;
+
+}
+
+.register:hover{
+    color:floralwhite;
+    background-color: #924E7D;
+}
+
+.search img{
+    position:absolute;
+    display: inline-block;
+    right:15px;
+    top:20%;
+}
+
+.search img:hover{
+    cursor: pointer;
+}
+
+.hero{
+    background-color: #f0e5ec;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0;
+}
+
+.content h1{
+    font-family: "Heebo",prata;
+    font-size: 55px;
+    
+}
+
+.images{
+    transform: translateY(80px);
+}
+
+.img2{
+    margin-left: 75px;
+
+}
+
+.shop{
+    text-decoration: none;
+    color:#924E7D;
+    font-size: 24px;
+    border:2px solid #924E7D;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem 0.5rem;
+    transition: 110ms ease-in-out;
+
+}
+
+.shop:hover{
+    color:floralwhite;
+    background-color: #924E7D;
+}
