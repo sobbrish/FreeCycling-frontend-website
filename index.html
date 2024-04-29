@@ -9,33 +9,62 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.goog leapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 <body>
-        <nav class="navbar">
-            
-            <img src="logo.png" alt="logo" width="130">
-        
-            <div class="nav-items" style="top: auto; height:auto; padding-bottom: 0px;">
-                <a href="#" class="active">HOME</a> <a href="#">ABOUT US</a> <a href="#">CONTACT US</a>
-            </div>
-            <div class="search">
-                <img src="search.svg" alt="search" width="30"> 
-                <input type="text" placeholder="Search...">
-            </div>
-            <a href="#" class="register">REGISTER NOW</a>
-
-        </nav>
-        <main class="hero">
-            <div class="content">
-                <h1 style="line-height: 60px;">Get Started With<br>Freecycling Today!</h1>
-                <pr>________</pr>
-                <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod  tempor incididunt<br>ut labore et dolore magna aliqua. Tortor aliquam<br>nulla  facilisi cras fermentum odio eu feugiat. </p>
-                <a href="#" class="shop">GO TO SHOP</a>
-            </div>
-            <div class="images">
-                <img src="img1.png" alt="img1" width="320" height="630">
-                <img src="img2.png" alt="img2" class="img2" width="320" height="630">
-            </div>
-
-        </main>
-<script scr="script.js"></script>
+    <nav class="navbar">
+        <img src="logo.png" alt="logo" width="130">
+        <div class="nav-items" style="top: auto; height:auto; padding-bottom: 0px;">
+            <a href="#" class="active">HOME</a> <a href="#">ABOUT US</a> <a href="#">CONTACT US</a>
+        </div>
+        <div class="search">
+            <img src="search.svg" alt="search" width="30"> 
+            <input type="text" placeholder="Search...">
+        </div>
+        <a href="#" class="register" id="trigger-modal" onclick="openModal()">REGISTER NOW</a>
+    </nav>
+    <main class="hero">
+        <div class="content">
+            <h1 style="line-height: 60px;">Get Started With<br>Freecycling Today!</h1>
+            <pr>________</pr>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod  tempor incididunt<br>ut labore et dolore magna aliqua. Tortor aliquam<br>nulla  facilisi cras fermentum odio eu feugiat. </p>
+            <a href="#" class="shop">GO TO SHOP</a>
+        </div>
+        <div class="images">
+            <img src="img1.png" alt="img1" width="320" height="630">
+            <img src="img2.png" alt="img2" class="img2" width="320" height="630">
+        </div>
+    </main>
+    <section id="modal" class="modal">
+        <button type="button" onclick="closeModal()">&times;</button>
+        <h1>Sign Up</h1>
+        <div id="form-ct">
+            <form>
+                <div id="user-details">
+                    <h2>Given name</h2>
+                    <input type="text" placeholder="Sophia">
+                    <h2>Surname</h2>
+                    <input type="text" placeholder="Zhang">
+                    <h2>Username</h2>
+                    <input type="text" placeholder="hxza301">
+                    <h2>Password</h2>
+                    <input type="text" placeholder="password">
+                </div>
+                
+                <div id="address-details">
+                    <h2>Home Address</h2>
+                    <input type="text" placeholder="Home Address">
+                    <h2>Work Address</h2>
+                    <input type="text" placeholder="Work Address">
+                </div>
+                
+                <div id="contact-details">
+                    <h2>Mobile Number</h2>
+                    <input type="text" placeholder="### ### ####">
+                    <h2>Email</h2>
+                    <input type="text" placeholder="example@domain.com">
+                </div>
+                <a href="#" class="submit">SUBMIT</a>
+            </form>
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>

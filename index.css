@@ -1,3 +1,8 @@
+body{
+    height:100vh;
+    overflow: hidden;
+}
+
 .navbar{
     background-color: #f0e5ec;
     display:flex;
@@ -51,6 +56,7 @@ img {
 .register{
     text-decoration: none;
     color:#924E7D;
+    font-family: "Heebo",sans-serif;
     font-size: 24px;
     border:2px solid #924E7D;
     border-radius: 10px;
@@ -97,10 +103,15 @@ img {
     margin-left: 75px;
 
 }
-
+.content p{
+    font-family: "Heebo",sans-serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
 .shop{
     text-decoration: none;
     color:#924E7D;
+    font-family: "Heebo",sans-serif;
     font-size: 24px;
     border:2px solid #924E7D;
     border-radius: 10px;
@@ -113,3 +124,107 @@ img {
     color:floralwhite;
     background-color: #924E7D;
 }
+
+.modal {
+    width: 700px;
+    height: 950px;
+    position: fixed;
+    border-radius: 6px;
+    box-shadow: 0 0 3px;
+    top:50%;
+    left:50%;
+    text-align: center;
+    background-color: white;
+    padding: 0 50px 0 50px;
+    visibility: hidden;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition: 200ms ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    position: relative;
+}
+
+.modal h1{
+    color:#924E7D;
+    font-family: "Heebo",sans-serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.modal button{
+    position: absolute;
+    right:0px;
+    top:0px;
+    border-radius: 0px 6px 0px 0px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: inherit;
+    padding: 0 10px 0;
+    border:none;
+    color:black;
+    transition: 200ms ease;
+}
+
+.modal button:hover{
+    background-color: red;
+    color: white;
+    padding: 0 10px 0;
+    
+}
+
+.modal h2{
+    font-family: "Heebo",sans-serif;
+    font-size: 20px;
+    color: #924E7D;
+    text-align: left;
+    margin: 10px 0 0 0;
+}
+
+.modal input{
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border:0.1px solid grey;
+    padding:0 1.5rem 0 1.5rem;
+    
+}
+
+#user-details{
+    margin-bottom: 55px;
+}
+
+#address-details{
+    margin-bottom: 55px;
+}
+
+.submit{
+    text-decoration: none;
+    color:floralwhite;
+    font-family: "Heebo",sans-serif;
+    font-size: 24px;
+    border:2px solid #924E7D;
+    background-color: #924E7D;
+    border-radius: 10px;
+    padding: 0.5rem 3rem 0.5rem;
+    transition: 110ms ease-in-out;
+    position: absolute;
+    left:20%;
+    bottom: -110px;
+
+}
+
+.submit:hover{
+    color:#924E7D;
+    background-color: #f0e5ec;
+}
+
+.open-Modal{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
