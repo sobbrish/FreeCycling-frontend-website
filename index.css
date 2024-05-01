@@ -3,6 +3,34 @@ body{
     overflow: hidden;
 }
 
+@media screen and (max-width:1919px) {
+    .nav-items > a, .navbar >a {
+        font-size: 15px;
+    }
+
+    .search input[type="text"]{
+        width:20rem;
+        height: 3rem;
+    }
+
+    .img1,.img2 {
+        width:270px;
+        height: 550px;
+    }
+
+    .content h1{
+        font-size: 45px !important;
+    }
+
+    .content p{
+        font-size: 15px !important;
+    }
+
+    .content > a{
+        font-size: 15px;
+    }
+}
+
 .navbar{
     background-color: #f0e5ec;
     display:flex;
@@ -53,6 +81,17 @@ img {
     
 }
 
+.search img{
+    position:absolute;
+    display: inline-block;
+    right:15px;
+    top:20%;
+}
+
+.search img:hover{
+    cursor: pointer;
+}
+
 .register{
     text-decoration: none;
     color:#924E7D;
@@ -70,16 +109,6 @@ img {
     background-color: #924E7D;
 }
 
-.search img{
-    position:absolute;
-    display: inline-block;
-    right:15px;
-    top:20%;
-}
-
-.search img:hover{
-    cursor: pointer;
-}
 
 .hero{
     background-color: #f0e5ec;
@@ -92,6 +121,7 @@ img {
 .content h1{
     font-family: "Heebo",prata;
     font-size: 55px;
+    margin-bottom: 40px;
     
 }
 
